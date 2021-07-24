@@ -6,6 +6,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 const stationRoutes = require('./api/routes/station.routes');
+const stationsRoutes = require('./api/routes/stations.routes');
 
 app.use((req, res, next )=>{
     res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,PATCH,OPTIONS');
@@ -15,6 +16,7 @@ app.use((req, res, next )=>{
 });
 
 stationRoutes(app);
+stationsRoutes(app);
 
 app.listen(port,()=>{
     console.clear();

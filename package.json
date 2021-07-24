@@ -4,7 +4,8 @@
   "description": "API para el proyecto de Kiosko Turistico (proyecto de Grafos)",
   "main": "index.js",
   "scripts": {
-    "test": "npm start"
+    "test": "npm start",
+    "start": "nodemon index.js"
   },
   "author": "FFahrenheit",
   "license": "ISC",

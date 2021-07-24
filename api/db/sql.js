@@ -22,7 +22,7 @@ exports.query = async (request) => {
     return new Promise((resolve, reject) => {
         connection.query(request, (err, res) => {
             if (err) {
-                return reject('DB error: ' + err.message);
+                reject('DB error: ' + err.message);
             }
             resolve(res);
         });
