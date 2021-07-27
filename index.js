@@ -6,6 +6,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 const placesRoutes = require('./api/routes/places.routes');
+const routesRoutes = require('./api/routes/routes.routes');
 const stationRoutes = require('./api/routes/station.routes');
 const stationsRoutes = require('./api/routes/stations.routes');
 
@@ -18,6 +19,7 @@ app.use((req, res, next )=>{
 });
 
 placesRoutes(app);
+routesRoutes(app);
 stationRoutes(app);
 stationsRoutes(app);
 
