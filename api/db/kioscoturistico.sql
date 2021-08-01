@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 25, 2021 at 12:42 AM
+-- Generation Time: Aug 01, 2021 at 05:24 PM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 7.3.29
 
@@ -43,15 +43,15 @@ CREATE TABLE `kiosco` (
 
 INSERT INTO `kiosco` (`id_kiosco`, `id_linea`, `id_estacion`, `estacion`, `tipo`, `estatus`, `id_matriz`) VALUES
 (1, 1, 0, 'Mirador', 0, 0, NULL),
-(2, 1, 1, 'Huentitan', 0, 0, NULL),
-(3, 1, 2, 'Zoologico', 0, 0, NULL),
-(4, 1, 3, 'Independecia Norte', 0, 0, NULL),
-(5, 1, 4, 'San Patricio', 0, 0, NULL),
-(6, 1, 5, 'Igualdad', 0, 0, NULL),
-(7, 1, 6, 'Monumental', 0, 0, NULL),
-(8, 1, 7, 'Monte Olivette', 0, 0, NULL),
-(9, 1, 8, 'Circunvalacion 2', 0, 0, NULL),
-(10, 1, 9, 'Fac. Medicina', 1, 0, 5),
+(2, 1, 1, 'Huentitan', 0, 1, NULL),
+(3, 1, 2, 'Zoologico', 0, 1, NULL),
+(4, 1, 3, 'Independecia Norte', 0, 1, NULL),
+(5, 1, 4, 'San Patricio', 0, 1, NULL),
+(6, 1, 5, 'Igualdad', 0, 1, NULL),
+(7, 1, 6, 'Monumental', 0, 1, NULL),
+(8, 1, 7, 'Monte Olivette', 0, 1, NULL),
+(9, 1, 8, 'Circunvalacion 2', 0, 1, NULL),
+(10, 1, 9, 'Ciencias de la Salud', 1, 0, 5),
 (11, 1, 10, 'Juan Alvarez', 0, 0, NULL),
 (12, 1, 11, 'Alameda', 0, 0, NULL),
 (13, 1, 12, 'San Juan de Dios', 1, 0, 9),
@@ -64,11 +64,11 @@ INSERT INTO `kiosco` (`id_kiosco`, `id_linea`, `id_estacion`, `estacion`, `tipo`
 (20, 1, 19, 'Lazaro Cardenas', 0, 0, NULL),
 (21, 1, 20, 'El Dean', 1, 0, 17),
 (22, 1, 21, 'Zona Industrial', 0, 0, NULL),
-(23, 1, 23, 'Lopez de Legazgi', 0, 0, NULL),
-(24, 1, 24, 'Clemente Orozco', 0, 0, NULL),
-(25, 1, 25, 'Artes Plasticas', 0, 0, NULL),
-(26, 1, 26, 'Escultura', 0, 0, NULL),
-(27, 1, 27, 'Fray Angelico', 0, 0, NULL),
+(23, 1, 22, 'Lopez de Legazgi', 0, 0, NULL),
+(24, 1, 23, 'Clemente Orozco', 0, 0, NULL),
+(25, 1, 24, 'Artes Plasticas', 0, 0, NULL),
+(26, 1, 25, 'Escultura', 0, 0, NULL),
+(27, 1, 26, 'Fray Angelico', 0, 0, NULL),
 (28, 2, 0, 'Central Sur', 0, 0, NULL),
 (29, 2, 1, 'Concentro', 0, 0, NULL),
 (30, 2, 2, 'Jardines de la Paz', 0, 0, NULL),
@@ -104,7 +104,7 @@ INSERT INTO `kiosco` (`id_kiosco`, `id_linea`, `id_estacion`, `estacion`, `tipo`
 (60, 3, 10, 'Santa Filomena', 0, 0, NULL),
 (61, 3, 11, 'Unidad Deportiva', 1, 0, 16),
 (62, 3, 12, 'Urdaneta', 0, 0, NULL),
-(63, 3, 13, '18 de Marzo', 0, 0, NULL),
+(63, 3, 13, '19 de Marzo', 0, 0, NULL),
 (64, 3, 14, 'Isla Raza', 0, 0, NULL),
 (65, 3, 15, 'Patria Sur', 0, 0, NULL),
 (66, 3, 16, 'España', 0, 0, NULL),
@@ -120,7 +120,7 @@ INSERT INTO `kiosco` (`id_kiosco`, `id_linea`, `id_estacion`, `estacion`, `tipo`
 (76, 4, 7, 'Mezquitan', 1, 0, 4),
 (77, 4, 8, 'Panteon de Belen', 0, 0, NULL),
 (78, 4, 9, 'Procuraduria', 0, 0, NULL),
-(79, 4, 10, 'Fac. Medicina', 1, 0, 5),
+(79, 4, 10, 'Ciencias de la Salud', 1, 0, 5),
 (80, 4, 11, 'Obrero', 0, 0, NULL),
 (81, 4, 12, 'Talpita', 0, 0, NULL),
 (82, 4, 13, 'El Jaraz', 0, 0, NULL),
@@ -233,16 +233,16 @@ INSERT INTO `puntos_de_interes` (`id_puntos_de_interes`, `punto_de_interes`, `id
 (2, 'Zoologico', 3),
 (3, 'Selva Magica', 3),
 (4, 'Planetario Severo Diaz Galindo', 3),
-(5, 'Estadio Jalisco', 7),
+(5, 'Estadio JAL', 7),
 (6, 'Plaza de Toros Nuevo Progreso', 7),
 (7, 'Facultad de Medicina', 10),
-(8, 'Mercado de San Juan de Dios', 11),
-(9, 'Teatro Degollado', 11),
-(10, 'Catedral Metropolitana', 11),
-(11, 'Museo Regional', 11),
-(12, 'Plaza de la Liberacion', 11),
-(13, 'Hospicio Cabañas', 11),
-(14, 'Plaza de los Hombres Ilustres', 11),
+(8, 'Mercado de San Juan de Dios', 13),
+(9, 'Teatro Degollado', 13),
+(10, 'Catedral Metropolitana', 13),
+(11, 'Museo Regional', 13),
+(12, 'Plaza de la Liberacion', 13),
+(13, 'Hospicio Cabañas', 13),
+(14, 'Plaza de los Hombres Ilustres', 13),
 (15, 'Parque Agua Azul', 17),
 (16, 'Teatro IMSS', 17),
 (17, 'Central de Autobuses de Zapopan', 28),
@@ -306,7 +306,7 @@ INSERT INTO `puntos_de_interes` (`id_puntos_de_interes`, `punto_de_interes`, `id
 (75, 'Hospicio Cabañas', 144),
 (76, 'Plaza de los Hombres Ilustres', 144),
 (77, 'Coliseo Olimpico', 147),
-(78, 'Alberca Olimpica', 147),
+(78, 'U CUCEI', 147),
 (79, 'Centro Comercial Forum Tlaquepaque', 147),
 (80, 'Parian', 150),
 (81, 'Centro Cultural El Refugio', 150),
@@ -318,7 +318,7 @@ INSERT INTO `puntos_de_interes` (`id_puntos_de_interes`, `punto_de_interes`, `id
 (87, 'Embajada Americana', 160),
 (88, 'Monumento a los Niños Heroes', 161),
 (89, 'Coliseo Olimpico', 166),
-(90, 'Alberca Olimpica', 166),
+(90, 'U CUCEI', 166),
 (91, 'Centro Comercial Forum Tlaquepaque', 166),
 (92, 'Parque San Rafael', 168);
 
@@ -353,7 +353,7 @@ ALTER TABLE `kiosco`
 -- AUTO_INCREMENT for table `puntos_de_interes`
 --
 ALTER TABLE `puntos_de_interes`
-  MODIFY `id_puntos_de_interes` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=93;
+  MODIFY `id_puntos_de_interes` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=94;
 
 --
 -- Constraints for dumped tables
